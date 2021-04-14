@@ -1,0 +1,145 @@
+/**----body o cuerpo----*/
+body{
+     margin: 0 auto;
+     padding: 0;
+     font-family: 'calibri light';
+}
+
+/**---------cara bonita o presentacion----------*/
+/**1-linea*/
+#linea {
+    width: 100%;
+    height: 5px;
+    background: #DF5838;
+}
+/**--------header------------*/
+/**logo*/
+#header{
+	width: 100%;
+	height: 99px;
+	background: #B44027;
+}
+#header #centro1{
+	width: 800px;
+	height: auto; overflow: hidden;
+	border: 0px solid;
+	margin: auto;
+}
+#header #centro1 #logo{
+    width: 200px; border: 0px solid;
+    float: left;
+}
+#header #centro1 #logo h2,p.parrafo{
+    color: #fff;
+}
+#header #centro1 #logo p.parrafo{
+    margin-top: -20px;
+    text-align:center;
+    text-size-adjust: 20px;
+    font-size: 18px;
+}
+/**----menu*/
+#header #menu{
+    width: 588px;
+    height: auto;
+    overflow: hidden;
+    border: 0px solid;
+    float: right;
+    margin-top: 40px;
+    text-align: right;
+}
+#header #menu ul li{
+    display: inline-block;
+}
+#header #menu ul li a{
+    color: #dac8c4;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 0px 4px;
+    font-size: 17px;
+ }
+#header #menu ul li a:hover{
+	background: #9B4531;
+}
+/**------------contenido-------------*/
+h1, h2 {
+    text-align: center; /** titulo y subtitulo */
+}
+
+img {
+    margin: 0 auto 0 auto; /**imajen */
+    display: block;
+}
+
+ p.parrafo1{
+    text-align: center; /** parrafo */
+    font-size: 25px;
+    color: #6e6e6e;
+}
+
+
+ /* espaciados */
+
+ .espaciado{
+    font-size: 3.5em;
+    text-align: center;
+    letter-spacing: 0.3em;
+    word-spacing: 0.3em;
+}
+ /* menu y carta */
+
+#menuycarta {             
+    text-align: center;
+    font-style: normal;
+    color: #B44027;
+    font-weight: 400;
+    font-size: 2em ;
+}
+.menucarta{
+    display: block;
+    margin: 10px auto;
+    font-size: 5px;
+    
+}
+p.menutexto{
+    text-align: center;
+    color: #B44027;
+    font-size: 20px;
+    font-style: normal;
+    line-height: .2em;
+}
+
+div.tarjetasimajenes{
+    padding: 5px;
+    margin:  20px auto;
+    padding: 10px;
+    background-color: gainsboro;
+    display: block;
+    border-radius: 5px;
+    width: 360px;
+}
+/**---------------------pie de pagina-----------*/
+#pie{
+    width: 100%;
+    height: 90px;
+    background: #B44027;
+}
+
+#pie #pie-de-pagina{
+    width: 800px;
+    height: auto; overflow: hidden;
+    margin: auto;      
+    color:#fff;
+    font-size: 18px;
+}
+ 
+.email{
+    color: #fff;text-decoration: none;
+}
+
+.email:hover{
+    text-decoration: underline;
+}
+
+
+

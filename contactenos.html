@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="CSS/contactenos.css">
+</head>
+<body>
+    <h1>Contáctenos</h1>
+       <form action="registro.php" method="get">
+           <fieldset>
+               <legend>Ingrese la información</legend>
+            Ingrese sus nombres <br>
+           <input type="text" name="nombres"><br> <br>
+           Ingrese sus apellidos <br>
+           <input type="text" name="apellidos"> <br> <br>
+           Ingrese su inquietud <br>
+           <textarea name="preguntas" cols="40" rows="5"></textarea> <br> <br>
+           Genero <br>
+           <input type="radio" name="genero" value="Masculino"> Masculino <br>
+           <input type="radio" name="genero" value="Femenino" > Femenino <br>
+           <input type="radio" name="genero" value="Indefenido" > Indefenido <br> <br>
+           Intereces <br>
+           <input type="checkbox" name="interes" value="mtb"> MTB <br>
+           <input type="checkbox" name="interes" value="ruta">  Ruta<br>
+           <input type="checkbox" name="interes" value="hibrida" > Hibrida<br>
+           <input type="checkbox" name="interes" value="electrica"> Eléctrica <br> <br>
+           Municipio de recidencia <br>
+           <select name="ciudad"> 
+               <option value="neiva"> Neiva</option>
+               <option value="pitalito"> Pitalito</option>
+               <option value="garzon"> Garzón</option>
+               <option value="san agustin"> San Agustín</option>
+               <option value="timana"> Timaná</option>
+               <option value="palestina"> Palestina</option>
+               <option value="acevedo"> Acevedo</option>
+           </select> <br> <br> <br>
+           <input  class="formulario" type="submit" value="enviar">
+
+        </fieldset>
+
+       </form>
+</body>
+</html>
+
