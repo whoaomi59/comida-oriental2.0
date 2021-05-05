@@ -111,13 +111,40 @@ p.menutexto{
 
 div.tarjetasimajenes{
     padding: 5px;
-    margin:  20px auto;
-    padding: 10px;
+    margin:  30px -90px  30px 200px /* auto */; /* modificamos el margin */
+    padding: 10px; 
     background-color: gainsboro;
-    display: block;
+    display:inline-block;
     border-radius: 5px;
     width: 360px;
+/* ---------modificaciones------------------- */
+    /* cursor: pointer; */
 }
+/*------------ MODIFICACIONES MAYO 4 DEL 2021 -----*/
+ /* link boton */
+ /* boton en el link */
+.estilo_enlace{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #A43B06;
+    background-color: #DA6B33;
+    border-radius: 15px;
+    border: 3px double #A43B06;  
+
+}
+
+.estilo_enlace:hover{
+    
+    color: #f5f4f4;
+    background-color: #df57387a;
+}
+
 /**---------------------pie de pagina-----------*/
 #pie{
     width: 100%;

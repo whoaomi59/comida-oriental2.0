@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, 
-    maximun-scale=1.0, minimun-scale=1.0">
+     maximun-scale=1.0, minimun-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Comida Oriental</title>
     <link rel="icon" type="image/jpg"href="D:\TRABAJOS_SENA_2021\Instructores\Jesus_David\web_cali_arroz\ico\encabezado.png"><!--------------icono-->    
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet"><!----------fuente-->
 </head>
+<STYLE>A {text-decoration: none;} </STYLE>
 <body>
 <!-------------clases------------------->
     <div id="linea"></div>
@@ -23,7 +24,7 @@
 <!------------------menu------------------------->
           <div id="menu">
               <ul>
-                <li><a href="">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="">Menú</a></li>
                 <li><a href="">Servicios</a></li>
                 <li><a href="">Clientes</a></li>
@@ -36,42 +37,53 @@
 
 <!---------------------contenido----------------------->
 
-    <h1>Comida Oriental</h1> <!-----titulo----------->
-    <img src="img/comida.original.jpg" alt="arroz chino" width="1523" height="700"> <!---imajen-->
+    <h1 id="titulo-principal">Comida Oriental</h1> <!-----titulo----------->
+    <img src="img/comida.original.jpg" alt="arroz chino" width="1263" height="700"> <!---imajen-->
     <h2>Gastronomia oriental y mucho mas!!!</h2> <!---subtitulo-->
     <p  class="parrafo1">!Tienda virtual especializada para la comercialización de comida oriental! </p> <!---parrafo-->
     <!-- menu y carta -->
     <p class="espaciado">El menu y la carta, para que eligas tu plato preferido (*-*)!!</p> 
     <h3 id="menuycarta"> menu y carta</h3>
 
-<dic class="contendo">
+<dic class="contendo"> <!-- MANEJA TODO LAS DIV DE LAS IMAGENES -->
 
-<div class="tarjetasimajenes"> <!-- los div de las imagenes -->
-    <p class="menutexto">Arroz</p>
-    <img  class="menucarta" src="img/carta/arroz-jpg.jpg" alt="Arroz con pollo" width="320" height="320"> <!--imagenes -->
-    <p class="menutexto">$20.000</p>
-</div>
+      <div class="tarjetasimajenes"> <!-- los div de las imagenes -->
+          <p class="menutexto">Arroz</p>
+          <img  class="menucarta" src="img/carta/arroz-jpg.jpg" alt="Arroz con pollo" usemap="#arroz-pollo" width="320" height="320"><!--imagenes -->
+          <!-- vamos a poner un mapeo de imagenes -->
+           <map name="arroz-pollo"><area shape="rect" coords="0,0,320,320" target="_blank" href="arroz.html"></map>
+          <p class="menutexto">$20.000</p>
+      </div>
 
-<div class="tarjetasimajenes">
-    <p class="menutexto">Arroz</p>
-    <img  class="menucarta" src="img/carta/camaron-jpg.jpg" alt=" Camaron" width="320" height="320">
-    <p class="menutexto">$20.000</p>
-</div>
+      <div class="tarjetasimajenes">
+          <p class="menutexto">Zopa de camarón</p>
+          <img  class="menucarta" src="img/carta/camaron-jpg.jpg" alt=" Camaron" usemap="#zopa-camaron" width="320" height="320">
+          <map name="zopa-camaron"><area shape="rect" coords="0,0,320,320" target="_blank" href="zopa-camaron.html"></map>
+          <p class="menutexto">$20.000</p>
+      </div>
 
-<div class="tarjetasimajenes">
-    <p class="menutexto">Arroz</p>
-    <img  class="menucarta" src="img/carta/chuleta-jpg.jpg" alt="Chuleta de cerdo" width="320" height="320">
-    <p class="menutexto">$20.000</p>
-</div>
+      <div class="tarjetasimajenes">
+          <p class="menutexto">Chuleta de cerdo</p>
+          <img  class="menucarta" src="img/carta/chuleta-jpg.jpg" alt="Chuleta de cerdo" width="320" height="320">
+          <p class="menutexto">$20.000</p>
+      </div>
 
-<div class="tarjetasimajenes">
-    <p class="menutexto">Arroz</p>
-    <img  class="menucarta" src="img/carta/fideos-jpg.jpg" alt="Fideos" width="320" height="320">
-    <p class="menutexto">$20.000</p>
+      <div class="tarjetasimajenes">
+        <p class="menutexto">Zopa de fideos</p>
+        <img  class="menucarta" src="img/carta/fideos-jpg.jpg" alt="Fideos" width="320" height="320">
+        <p class="menutexto">$20.000</p>
 
-</div>
+      </div>
 
 </dic>
+
+<!-- -------LINKS Y REDIRECCIONES -->
+    <br>
+     <!-- Enlace a un sitio web externo o de otra urrl-->
+     <a href="index.html#titulo-principal"> <p style="text-align:center"><span class="estilo_enlace">Ir al título principal</span> </p></a>
+
+    <a href="https://www.restaurantedragonoriental.com/"> <p style="text-align:center"><span class="estilo_enlace">Visitar otros restaurantes</span> </p></a>
+    <br>
 <!---------------pie de pagina------------------>
   <div id="pie">
       <div id="pie-de-pagina">
