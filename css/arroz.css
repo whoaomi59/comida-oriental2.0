@@ -145,3 +145,26 @@ body{
     color: #f5f4f4;
     background-color: #df57387a;
 }
+
+/**---------------------pie de pagina-----------*/
+#pie{
+    width: 100%;
+    height: 90px;
+    background: #B44027;
+}
+
+#pie #pie-de-pagina{
+    width: 800px;
+    height: auto; overflow: hidden;
+    margin: auto;      
+    color:#fff;
+    font-size: 18px;
+}
+ 
+.email{
+    color: #fff;text-decoration: none;
+}
+
+.email:hover{
+    text-decoration: underline;
+}
