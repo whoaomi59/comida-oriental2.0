@@ -1,0 +1,257 @@
+ *{
+	margin:0;
+	padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif; /* fuente */
+}  
+
+#linea {
+  width: 100%;
+  height: 8px;
+  background: #DF5838;
+}
+/* -------------menu --------------*/
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    background: #B44027; /* color de los cuadros */
+    border-bottom: 1px solid #bb4e1b;
+    height: 45px;
+}
+
+.menu-main a{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff; /* color texto */
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background: rgba(0,0,0, .1);
+}
+
+@media (max-width: 717px) {
+    
+    .menu-main{
+        height: auto;
+        border-bottom: 0px;
+        display: block;
+    }
+    
+    .menu-main a{
+        height: 45px;
+        border-bottom: 1px solid #DF5838; /* linea que ba debajo de cada cuadro */
+    }
+
+}
+
+/* todo el contenido de la tabla */
+caption {    /* --------------TITULO */
+    padding: 25px;
+    font-style: italic;
+    color: #C12D0A;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 3em;
+  }
+/* TABLASSSSS*/
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #DF5838; /* --------color borde------- */
+}
+  
+  thead th:nth-child(1) {
+    width: 30%;
+}
+  
+  thead th:nth-child(2) {
+    width: 20%;
+}
+  
+  thead th:nth-child(3) {
+    width: 15%;
+}
+  
+  thead th:nth-child(4) {
+    width: 35%;
+}
+  
+  th, td {
+    padding: 20px;
+}
+
+/* FUENTES DE GOOGLE*/
+
+  thead th, tfoot th, html{
+    font-family: 'Rock Salt', cursive;
+  }
+  span tabla-cliente
+  {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 1px; /* tamaño de la letra  de las filas*/
+  }
+  
+  td {
+    letter-spacing: 2px; /* tamaño de las tetras de las columnas */
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+/* PONER COLOR A LA TABLA */
+  thead, tfoot, td { /* fuente */
+   
+    color: white;
+   
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid #DF5838; /* linea de la tabla */
+  }
+/* DISEÑO DE RAYAS */
+  tbody tr:nth-child(odd) {   
+    background-color: #B82806; /* color de la casilla 1 y 3 */
+  }
+  table {
+    background-color: #DC4F2D; /* color de la primer casilla y de  la del conteo */
+  }
+
+  /* pie de pagiga y footer */
+
+footer{
+  background:#DF5838;
+  color:#ffffff;
+  /* padding: 40px; */
+}
+
+.container-de-todo{
+  width: 100%;
+  max-width:1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.pie-pagina{
+  display: flex; /* para ponerla uno junto a la otra */
+  justify-content: space-between;
+}
+
+.colum1{
+  max-width:400px;
+}
+ .colum1 h1{
+   font-size: 20px; /* tamaño del H1 */
+ }
+
+ .colum1 p{
+   font-size: 14px;  /* tamaño del parrafo */
+   color: #c7c7c7;
+   margin-top: 20px; /* para cepararlo un poco del H1 */
+ }
+ .colum2{
+   max-width: 400px;
+ }
+ 
+ .colum2 h1{
+   font-size: 22px; /* tamaño de la columna 2 */
+ }
+
+ .colum2 .fila{
+   margin-top: 20px; /* separar un poco el texto */
+   display: flex ;
+ }
+ .fila img{
+   width: 35px; /* ancho de los iconos */
+   height: 36px; /* alto de los iconos */
+ }
+
+ .fila label{
+   margin-top: 10px;
+   margin-left: 20px;
+ }
+ 
+ .colum3{
+   max-width: 400px;
+ }
+ .colum3 h1{
+   font-size: 22px;
+ }
+ .colum3 .fila3{
+   margin-top: 20px;
+   display:flex; 
+ }
+
+ .fila3 img{
+    width: 35px; /* ancho de los iconos */
+    height: 36px;  /* alto de los iconos */
+ }
+
+ .fila3 label{
+   margin-top: 10px;
+   margin-left: 20px;
+   max-width: 100px;
+ }
+ .fila4 img{
+  width: 35px; /* ancho de los iconos */
+  height: 36px;  /* alto de los iconos */
+ }
+ .fila4 label{
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 100px;
+ }
+ .fila5 img{
+  width: 35px; /* ancho de los iconos */
+  height: 36px;  /* alto de los iconos */
+ }
+.fila5 label{
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 100px;
+}
+
+.piefooter{
+  width: 100%;
+  background: #B44027; /* color del pie de pagina */
+  display: flex;
+  /* padding: 20px; */
+  justify-content:space-between;
+}
+
+.footer{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.pie2{
+  color: #c7c7c7;
+}
+
+.pie2 a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pie3 a{
+  text-decoration: none;
+  color: #c7c7c7;
+}
+

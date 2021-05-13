@@ -12,54 +12,44 @@ body{
     height: 5px;
     background: #DF5838;
 }
-/**--------header------------*/
-/**logo*/
-#header{
-	width: 100%;
-	height: 99px;
-	background: #B44027;
+/**--------Menu------------*/
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    background: #B44027; /* color de los cuadros */
+    border-bottom: 1px solid #bb4e1b;
+    height: 45px;
 }
-#header #centro1{
-	width: 800px;
-	height: auto; overflow: hidden;
-	border: 0px solid;
-	margin: auto;
-}
-#header #centro1 #logo{
-    width: 200px; border: 0px solid;
-    float: left;
-}
-#header #centro1 #logo h2,p.parrafo{
-    color: #fff;
-}
-#header #centro1 #logo p.parrafo{
-    margin-top: -20px;
-    text-align:center;
-    text-size-adjust: 20px;
-    font-size: 18px;
-}
-/**----menu*/
-#header #menu{
-    width: 588px;
-    height: auto;
-    overflow: hidden;
-    border: 0px solid;
-    float: right;
-    margin-top: 40px;
-    text-align: right;
-}
-#header #menu ul li{
-    display: inline-block;
-}
-#header #menu ul li a{
-    color: #dac8c4;
+
+.menu-main a{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff; /* color texto */
     text-decoration: none;
-    padding: 7px 10px;
-    margin: 0px 4px;
-    font-size: 17px;
- }
-#header #menu ul li a:hover{
-	background: #9B4531;
+    font-size: 12px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background: rgba(0,0,0, .1);
+}
+
+@media (max-width: 717px) {
+    
+    .menu-main{
+        height: auto;
+        border-bottom: 0px;
+        display: block;
+    }
+    
+    .menu-main a{
+        height: 45px;
+        border-bottom: 1px solid #DF5838; /* linea que ba debajo de cada cuadro */
+    }
+
 }
 /**------------contenido-------------*/
 h1, h2 {
@@ -146,27 +136,168 @@ div.tarjetasimajenes{
 }
 
 /**---------------------pie de pagina-----------*/
-#pie{
+
+
+
+img.menucarta{
     width: 100%;
-    height: 90px;
-    background: #B44027;
 }
 
-#pie #pie-de-pagina{
-    width: 800px;
-    height: auto; overflow: hidden;
-    margin: auto;      
-    color:#fff;
-    font-size: 18px;
+footer{
+    background:#DF5838;
+    color:#ffffff;
+    /* padding: 40px; */
+  }
+  
+  .container-de-todo{
+    width: 100%;
+    max-width:1200px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .pie-pagina{
+    display: flex; /* para ponerla uno junto a la otra */
+    justify-content: space-between;
+  }
+  
+  .colum1{
+    max-width:400px;
+  }
+   .colum1 h1{
+     font-size: 20px; /* tamaño del H1 */
+   }
+  
+   .colum1 p{
+     font-size: 14px;  /* tamaño del parrafo */
+     color: #c7c7c7;
+     margin-top: 20px; /* para cepararlo un poco del H1 */
+   }
+   .colum2{
+     max-width: 400px;
+   }
+   
+   .colum2 h1{
+     font-size: 22px; /* tamaño de la columna 2 */
+   }
+  
+   .colum2 .fila{
+     margin-top: 20px; /* separar un poco el texto */
+     display: flex ;
+   }
+   .fila img{
+     width: 35px; /* ancho de los iconos */
+     height: 36px; /* alto de los iconos */
+   }
+  
+   .fila label{
+     margin-top: 10px;
+     margin-left: 20px;
+   }
+   
+   .colum3{
+     max-width: 400px;
+   }
+   .colum3 h1{
+     font-size: 22px;
+     
+   }
+   .colum3 .fila3{
+     margin-top: 20px;
+     display:flex; 
+   }
+  
+   .fila3 img{
+      width: 35px; /* ancho de los iconos */
+      height: 36px;  /* alto de los iconos */
+   }
+  
+   .fila3 label{
+     margin-top: 10px;
+     margin-left: 20px;
+     max-width: 100px;
+   }
+   .fila4 img{
+    width: 35px; /* ancho de los iconos */
+    height: 36px;  /* alto de los iconos */
+   }
+   .fila4 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 100px;
+   }
+   .fila5 img{
+    width: 35px; /* ancho de los iconos */
+    height: 36px;  /* alto de los iconos */
+   }
+  .fila5 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 100px;
+  }
+  
+  .piefooter{
+    width: 100%;
+    background: #B44027; /* color del pie de pagina */
+    display: flex;
+    /* padding: 20px; */
+    justify-content:space-between;
+  }
+  
+  .footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .pie2{
+    color: #c7c7c7;
+  }
+  
+  .pie2 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .pie3 a{
+    text-decoration: none;
+    color: #c7c7c7;
+  }
+  
+@media screen and (min-width: 280px) and (max-width:1024px){
+    .img_1{
+        width: 100%;
+        height: 400px;
+
+    }
+    div.tarjetasimajenes{
+        width: 50%;
+        display:block;
+        margin: 100px;
+        padding: 10px;
+        height:  400px;
+    }   
+        
+      
+} 
+@media screen and (max-width: 717px){
+            div.colum3{
+               width: 100%;
+               display: block;
+               padding: 5px;
+            }
+            .fila3 img{
+                width: 20px;
+            }
+            .fila3{
+                color: black;
+                font-size: 10px;
+                text-align: left;
+            
+                
+   
+                
+            }
 }
- 
-.email{
-    color: #fff;text-decoration: none;
-}
-
-.email:hover{
-    text-decoration: underline;
-}
-
-
-
