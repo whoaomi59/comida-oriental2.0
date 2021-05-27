@@ -1,303 +1,172 @@
+@charset "utf-8";
 /**----body o cuerpo----*/
-body{
-     margin: 0 auto;
-     padding: 0;
-     font-family: 'calibri light';
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 205, 165);
+  font-family: "calibri light";
 }
 
 /**---------cara bonita o presentacion----------*/
 /**1-linea*/
 #linea {
-    width: 100%;
-    height: 5px;
-    background: #DF5838;
+  width: 100%;
+  height: 5px;
+  background: #df5838;
 }
 /**--------Menu------------*/
-.menu-main{
-    display: flex;
-    justify-content: space-between;
-    background: #B44027; /* color de los cuadros */
-    border-bottom: 1px solid #bb4e1b;
-    height: 45px;
+.menu-main {
+  display: flex;
+  justify-content: space-between;
+  background: #b44027; /* color de los cuadros */
+  border-bottom: 1px solid #bb4e1b;
+  height: 45px;
 }
 
-.menu-main a{
-    flex: 1;
-    font-family: arial;
-    display: flex;
-    color: #ffffff; /* color texto */
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;    
-    justify-content: center;
-    align-items: center;
+.menu-main a {
+  flex: 1;
+  font-family: arial;
+  display: flex;
+  color: #ffffff; /* color texto */
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  font-weight: bold;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu-main a:hover{
-    background: rgba(0,0,0, .1);
+.menu-main a:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 717px) {
-    
-    .menu-main{
-        height: auto;
-        border-bottom: 0px;
-        display: block;
-    }
-    
-    .menu-main a{
-        height: 45px;
-        border-bottom: 1px solid #DF5838; /* linea que ba debajo de cada cuadro */
-    }
+  .menu-main {
+    height: auto;
+    border-bottom: 0px;
+    display: block;
+  }
 
+  .menu-main a {
+    height: 45px;
+    border-bottom: 1px solid #df5838; /* linea que ba debajo de cada cuadro */
+  }
 }
 /**------------contenido-------------*/
-h1, h2 {
-    text-align: center; /** titulo y subtitulo */
+h1 {
+  font-family: italic;
+  color: #a43b06;
+}
+
+h1,
+h2 {
+  text-align: center; /** titulo y subtitulo */
 }
 
 img {
-    margin: 0 auto 0 auto; /**imajen */
-    display: block;
+  margin: 0 auto 0 auto; /* imagen del body  */
+  display: block;
 }
 
- p.parrafo1{
-    text-align: center; /** parrafo */
-    font-size: 25px;
-    color: #6e6e6e;
+p.parrafo1 {
+  text-align: center; /** parrafo */
+  font-size: 25px;
+  color: #6e6e6e;
 }
 
+/* espaciados */
 
- /* espaciados */
+.espaciado {
+  font-size: 3.5em;
+  text-align: center;
+  letter-spacing: 0.3em;
+  word-spacing: 0.3em;
+}
+/* menu y carta */
 
- .espaciado{
-    font-size: 3.5em;
-    text-align: center;
-    letter-spacing: 0.3em;
-    word-spacing: 0.3em;
+#menuycarta {
+  text-align: center;
+  font-style: normal;
+  color: #b44027;
+  font-weight: 400;
+  font-size: 2em;
 }
- /* menu y carta */
-
-#menuycarta {             
-    text-align: center;
-    font-style: normal;
-    color: #B44027;
-    font-weight: 400;
-    font-size: 2em ;
+.menucarta {
+  display: block;
+  margin: 10px auto;
+  font-size: 5px;
 }
-.menucarta{
-    display: block;
-    margin: 10px auto;
-    font-size: 5px;
-    
-}
-p.menutexto{
-    text-align: center;
-    color: #B44027;
-    font-size: 20px;
-    font-style: normal;
-    line-height: .2em;
+p.menutexto {
+  text-align: center;
+  color: #b44027;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 0.2em;
 }
 
-div.tarjetasimajenes{
-    padding: 5px;
-    margin:  30px -90px  30px 200px /* auto */; /* modificamos el margin */
-    padding: 10px; 
-    background-color: gainsboro;
-    display:inline-block;
-    border-radius: 5px;
-    width: 360px;
-/* ---------modificaciones------------------- */
-    /* cursor: pointer; */
+div.tarjetasimajenes {
+  padding: 5px;
+  margin: 30px -90px 30px 200px /* auto */; /* modificamos el margin */
+  padding: 10px;
+  padding: 10px;
+  padding: 10px;
+  background-color: gainsboro;
+  display: inline-block;
+  border-radius: 5px;
+  width: 360px;
+  /* ---------modificaciones------------------- */
+  /* cursor: pointer; */
 }
 /*------------ MODIFICACIONES MAYO 4 DEL 2021 -----*/
- /* link boton */
- /* boton en el link */
-.estilo_enlace{
-    text-decoration: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #A43B06;
-    background-color: #DA6B33;
-    border-radius: 15px;
-    border: 3px double #A43B06;  
-
+/* link boton */
+/* boton en el link */
+.estilo_enlace {
+  text-decoration: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #a43b06;
+  background-color: #da6b33;
+  border-radius: 15px;
+  border: 3px double #a43b06;
 }
 
-.estilo_enlace:hover{
-    
-    color: #f5f4f4;
-    background-color: #df57387a;
+.estilo_enlace:hover {
+  color: #f5f4f4;
+  background-color: #df57387a;
 }
 
 /**---------------------pie de pagina-----------*/
 
-
-
-img.menucarta{
+/*  */
+@media screen and (min-width: 173px) and (max-width: 1024px) {
+  .img_1 {
     width: 100%;
-}
+    height: 400px;
+  }
+  div.tarjetasimajenes {
+    width: 20%;
+    display: block;
+    margin: 100px;
+    padding: 10px;
+    height: 350px;
+  }
 
-footer{
-    background:#DF5838;
-    color:#ffffff;
-    /* padding: 40px; */
-  }
-  
-  .container-de-todo{
+  img {
     width: 100%;
-    max-width:1200px;
-    margin: auto;
-    padding: 40px;
+    height: 250px;
+    padding: 0%;
   }
-  
-  .pie-pagina{
-    display: flex; /* para ponerla uno junto a la otra */
-    justify-content: space-between;
+  p {
+    font-size: 25px;
   }
-  
-  .colum1{
-    max-width:400px;
+  p.espaciado {
+    font-size: 25px;
   }
-   .colum1 h1{
-     font-size: 20px; /* tamaño del H1 */
-   }
-  
-   .colum1 p{
-     font-size: 14px;  /* tamaño del parrafo */
-     color: #c7c7c7;
-     margin-top: 20px; /* para cepararlo un poco del H1 */
-   }
-   .colum2{
-     max-width: 400px;
-   }
-   
-   .colum2 h1{
-     font-size: 22px; /* tamaño de la columna 2 */
-   }
-  
-   .colum2 .fila{
-     margin-top: 20px; /* separar un poco el texto */
-     display: flex ;
-   }
-   .fila img{
-     width: 35px; /* ancho de los iconos */
-     height: 36px; /* alto de los iconos */
-   }
-  
-   .fila label{
-     margin-top: 10px;
-     margin-left: 20px;
-   }
-   
-   .colum3{
-     max-width: 400px;
-   }
-   .colum3 h1{
-     font-size: 22px;
-     
-   }
-   .colum3 .fila3{
-     margin-top: 20px;
-     display:flex; 
-   }
-  
-   .fila3 img{
-      width: 35px; /* ancho de los iconos */
-      height: 36px;  /* alto de los iconos */
-   }
-  
-   .fila3 label{
-     margin-top: 10px;
-     margin-left: 20px;
-     max-width: 100px;
-   }
-   .fila4 img{
-    width: 35px; /* ancho de los iconos */
-    height: 36px;  /* alto de los iconos */
-   }
-   .fila4 label{
-    margin-top: 10px;
-    margin-left: 20px;
-    max-width: 100px;
-   }
-   .fila5 img{
-    width: 35px; /* ancho de los iconos */
-    height: 36px;  /* alto de los iconos */
-   }
-  .fila5 label{
-    margin-top: 10px;
-    margin-left: 20px;
-    max-width: 100px;
-  }
-  
-  .piefooter{
-    width: 100%;
-    background: #B44027; /* color del pie de pagina */
-    display: flex;
-    /* padding: 20px; */
-    justify-content:space-between;
-  }
-  
-  .footer{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  .pie2{
-    color: #c7c7c7;
-  }
-  
-  .pie2 a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
-  .pie3 a{
-    text-decoration: none;
-    color: #c7c7c7;
-  }
-  
-@media screen and (min-width: 280px) and (max-width:1024px){
-    .img_1{
-        width: 100%;
-        height: 400px;
-
-    }
-    div.tarjetasimajenes{
-        width: 50%;
-        display:block;
-        margin: 100px;
-        padding: 10px;
-        height:  400px;
-    }   
-        
-      
-} 
-@media screen and (max-width: 717px){
-            div.colum3{
-               width: 100%;
-               display: block;
-               padding: 5px;
-            }
-            .fila3 img{
-                width: 20px;
-            }
-            .fila3{
-                color: black;
-                font-size: 10px;
-                text-align: left;
-            
-                
-   
-                
-            }
 }

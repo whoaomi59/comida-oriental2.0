@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Hospital</title>
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="linea"></div>
+
+    <!------------------menu------------------------->
+    <nav class="menu-main">
+      <a href="index.html">Inicio</a>
+      <a href="#">Menú</a>
+      <a href="form-hospital.html">Citas</a>
+      <a href="tabla.html">Clientes</a>
+      <a href="contactenos.html">Contáctos</a>
+    </nav>
+
+    <!-- formulario para un hospital -->
+    <h1 class="titulo">Formulario citas</h1>
+    <form action="tabla-citas.html" method="GET">
+      <fieldset>
+        <!-- todo tiene que ir dentro del fieldset, es el cuadro-->
+        <legend>Ingrese la información</legend>
+        <p>Tipo de documento</p>
+
+        <!-- empezamos el requerimiento del numero de documento -->
+        <!-- es el tipo de documento -->
+        <select name="documento">
+          <!-- es para hacer la seleccion del documento -->
+          <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+
+          <option value="tarjeta">Tarjeta de Identidad</option>
+
+          <option value="registro">Registro Civil</option>
+
+          <option value="pasaporte">Pasaporte</option>
+
+          <option value="extrangeria">Cedula de extranjería</option>
+        </select>
+        <br />
+        <p>Número de documento</p>
+        <input type="number" name="numero" /> <br />
+
+        <!-- aqui terminamos el reequerimiento del documento -->
+
+        <!--  lista de los medicos que puede seleccionar el cliente -->
+        <p>Medicos</p>
+        <select name="medicos">
+          <option value="pepito perez">Jhoan Jose Norberto</option>
+          <option value="pepito perez">Estela Maris Santiago</option>
+          <option value="pepito perez">Liria Calvache</option>
+          <option value="pepito perez">Jose Santiago</option>
+        </select>
+
+        <!-- vamos a crear el orden de los horarios -->
+        <p>Horario de citas</p>
+        <input class="chekbox" type="checkbox" /> Mañana
+        <br />
+        <input class="chekbox" type="checkbox" /> Tarde <br />
+
+        <!-- vamos a crear la opcion de enviar -->
+        <input class="enviar" type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+</html>

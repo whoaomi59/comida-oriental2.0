@@ -1,16 +1,16 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-form{
-    width: 40%;
-    margin: 0 auto;
+form {
+  width: 40%;
+  margin: 0 auto;
 }
-fieldset{
-    border-radius: 7px;
+fieldset {
+  border-radius: 7px;
 }
-input{
-    text-align: center;
+input {
+  text-align: center;
 }
-.formulario{
-    text-align: center;
+.formulario {
+  text-align: center;
 }
