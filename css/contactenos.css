@@ -1,5 +1,7 @@
 h1 {
   text-align: center;
+  margin-top: 40px;
+  font-size: 50px;
 }
 form {
   width: 40%;
@@ -13,4 +15,15 @@ input {
 }
 .formulario {
   text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  margin: 50px;
+  font-family: italic;
+}
+
+.formulario:hover {
+  background-color: burlywood;
+  font-size: 20px;
 }
