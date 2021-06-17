@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img_1 {
+  /* imagen con el efecto paralax */
+  width: 100%;
+  height: 520px;
+  background-image: url("1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
