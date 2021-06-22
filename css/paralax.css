@@ -17,3 +17,30 @@
   align-items: center;
   margin-top: 50px;
 }
+
+.texto-caja {
+  /* cuadro que esta ensima del texto */
+  background: #111;
+  padding: 18px;
+  width: 320px;
+  text-align: center;
+  color: azure;
+  border-radius: 5px;
+}
+.caja {
+  font-size: 32px;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  color: aliceblue;
+}
+
+.texto-caja:hover {
+  background: chocolate;
+}
+
+a:hover {
+  font-size: 33px;
+}
