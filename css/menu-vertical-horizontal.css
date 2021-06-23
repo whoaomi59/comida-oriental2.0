@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    background-image: url('sena.PNG');
+    width: 100%;
+    height: 265px;
+}
+
+
+
+.menu-horizontal{
+    background-color:whitesmoke;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    margin: auto;
+   display: block;
+   padding: 2px;
+   
+}
+
+.menu{
+    /* background-color: #ff6b00; */
+    width: 70%;
+    margin-left: 400px;
+    /* display: block; */
+    height: 2em;
+    padding: 4px;
+    
+    
+}
+.texto{
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    border-right: 1px solid #ff6b00  ;
+    /* padding: 2px; */ 
+   padding: 2px;
+    
+    
+}
+
+.texto{
+    text-decoration: none;
+    color: gray;
+    font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif ;
+}
+
+
+/* menu vertical */
+
+.menu-vertical{
+    background-color: #ff6b00;
+    width: 100%;
+    height: 50em;
+    border-top: 2px solid rgba(107, 103, 103, 0.637);
+}
+
+.container{
+    background-color: whitesmoke;
+    width: 50%;
+    height: 50em;
+    margin: auto;
+}
+.puntos{
+    margin: 4px;
+    border-bottom: 2px dotted #ff6b00;
+    padding: 10px;
+}
+.punto{
+    color: #ff6b00;
+    font-size: 12px;
+}
+.gion{
+    color: gray;
+}
+/* menu como tal */
+
+.container-menu{
+    color: white;
+    margin: 25px 25px 25px 10px ;
+    display: inline-block;
+    width: 30%;
+}
+
+.vertical{
+    list-style-type: none;
+    font-size: 1em;
+    
+    padding-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+li{
+    background-color: #5d5d5d;
+    margin: 3px;
+    padding: 9px 15px;
+    border-radius: 8px;
+    width: 70%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif  ;
+    /* font-weight: unset; */
+}
+
+li:hover{
+    background: rgba(128, 128, 128, 0.774);
+}
