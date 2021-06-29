@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: cursive;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  line-height: 2.5em;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: auto;
+  display: block;
+}
+
+.menu {
+  background: darkcyan;
+  width: 100%;
+  display: table;
+}
+
+.menu ul {
+  position: absolute;
+}
+
+.menu > li {
+  float: left;
+  width: 220px;
+}
+/* segundo nivel */
+
+nav li li {
+  width: 200px;
+  max-height: 0;
+  overflow: hidden;
+  background: darkcyan;
+}
+
+nav li:hover > ul > li {
+  overflow: visible;
+  max-height: 100%;
+}
+
+.menu > li > ul {
+  top: 103%;
+}
+
+/* hover a todos los li  */
+
+li :hover {
+  background: rgb(1, 82, 82);
+}
+
+/* arreglos en el texto */
+a {
+  font-size: 25px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
