@@ -41,6 +41,6 @@ a {
   background: chocolate;
 }
 
-a:hover {
-  font-size: 33px;
+.paralax:hover {
+  font-size: 35px;
 }

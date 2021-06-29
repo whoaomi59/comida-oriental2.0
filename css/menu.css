@@ -1,61 +1,117 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/**---------cara bonita o presentacion----------*/
-/**1-linea*/
-/* #linea {
-  width: 100%;
-  height: 5px;
-  background: #807d7c;
-  /* position: fixed; */
-/*  top: 0;
-  left: 0;
-} */
-/**--------Menu------------*/
-.menu-main {
-  display: flex;
-  justify-content: space-between;
-  background: #b44127e8; /* color de los cuadros */
-  border-bottom: 1px solid #bb4e1b;
-  height: 45px;
+body {
+  font-family: sans-serif;
+  /* padding: 10px 20px 0; */
+}
+.menu {
+  background-color: #a43b06;
+  height: 60px;
   position: fixed;
   width: 100%;
-  height: 50px;
   top: 0;
   left: 0;
-
-  /* visibility: hidden;
-} */
 }
-
-.menu-main a {
-  flex: 1;
-  font-family: arial;
+nav {
   display: flex;
-  color: #ffffff; /* color texto */
+  justify-content: space-between; /* para que se aline el gogo asia la derecha */
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.link,
+.logo {
+  color: white;
   text-decoration: none;
-  font-size: 15px;
+}
+
+.logo {
+  font-size: 30px;
   font-weight: bold;
-  font-style: italic;
-  justify-content: center;
-  align-items: center;
+  padding: 0 40px;
+  line-height: 60px; /* para centrar */
+}
+.nav1 {
+  display: flex;
+  margin-right: 40px; /* para separar de la derecha */
+  list-style: none;
+}
+.nav-menu {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+.link:hover,
+.link-active {
+  background-color: #a43b06;
+  transition: 0.5s; /* para que no sea tan brusco el efecto */
+}
+.bot {
+  /* boton tipo amburgesa */
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
 }
 
-.menu-main a:hover {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 717px) {
-  .menu-main {
-    height: auto;
-    border-bottom: 0px;
-    display: block;
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px 20px 0;
+    /* background-color: red; */
+  }
+  .menu {
+    height: 50px;
   }
 
-  .menu-main a {
-    height: 45px;
-    border-bottom: 1px solid #df5838; /* linea que ba debajo de cada cuadro */
+  .logo {
+    font-size: 25px;
+    line-height: 50px;
+    padding: 0 20px;
+  }
+  .nav1 {
+    flex-direction: column; /* para que este unu ensima del otro */
+    margin-right: 20px; /* para separar de la derecha */
+    background-color: #b84b14fd;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+
+    height: calc(100% - 50px); /* para que agarretodo e alto */
+    overflow-y: auto; /* para poder vajar cuando el dispositivo es muy pequeño */
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-menu {
+    line-height: 50px;
+  }
+
+  .link:hover,
+  .link-active {
+    background: none;
+    color: #4e2816;
+  }
+  .bot {
+    display: block;
+  }
+  .nav-menu-visible {
+    /* para que aparesca el menu */
+    left: 0;
   }
 }

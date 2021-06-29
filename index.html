@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <title>Comida Oriental</title>
-    <link
-      rel="icon"
-      type="image/jpg"
-      href="D:\TRABAJOS_SENA_2021\Instructores\Jesus_David\web_cali_arroz\ico\encabezado.png"
-    />
+
+    <script defer src="js/index.js"></script>
+    <script
+      src=" https://kit.fontawesome.com/7e5b2d153f.js "
+      crossorigin=" anónimo "
+    ></script>
     <!--------------icono-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -30,21 +31,31 @@
     <!-------------clases------------------->
     <!-- <div id="linea">fgbdf</div> -->
 
-    <!------------------menu------------------------->
-    <nav class="menu-main">
-      <a href="#">Inicio</a>
-      <a href="layouts.html">layouts</a>
-      <a href="form-hospital.html">Citas</a>
-      <a href="tabla.html">Clientes</a>
-      <a href="contactenos.html">Contáctos</a>
-      <a href="menu-vertica-hrizontall.html">Menu vertical horizontal</a>
-    </nav>
+    <!------------------menu repisive------------------------->
+    <header class="menu">
+      <nav>
+        <a href="" class="logo">LOGO</a>
+        <button class="bot" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav1">
+          <li class="nav-menu"><a href="#" class="link">Inicio</a></li>
+          <li class="nav-menu"><a href="#" class="link">Contactenos</a></li>
+          <li class="nav-menu"><a href="#" class="link">Clientes</a></li>
+          <li class="nav-menu">
+            <a href="#" class="link link-active">Nosotros</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!---------------------contenido----------------------->
 
     <header class="img_1">
       <div class="texto-caja">
-        <h2 class="caja"><a href="menu_vetical.html">Menu Vertical</a></h2>
+        <h2 class="caja">
+          <a class="paralax" href="menu_vetical.html">Menu Vertical</a>
+        </h2>
       </div>
     </header>
     <!-- imagen con efecto paralax
