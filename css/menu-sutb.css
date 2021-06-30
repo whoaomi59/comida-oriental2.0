@@ -1,71 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  font-family: cursive;
-}
-nav ul {
-  list-style: none;
-}
-nav li {
-  line-height: 2.5em;
-  position: relative;
-}
 
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: auto;
-  display: block;
-}
 
-.menu {
-  background: darkcyan;
-  width: 100%;
-  display: table;
-}
+/* general */
 
-.menu ul {
-  position: absolute;
-}
 
-.menu > li {
-  float: left;
-  width: 220px;
-}
-/* segundo nivel */
+ nav{
+     font-size: 1.5em;
+     background: darkcyan;
+    
+ }
 
-nav li li {
-  width: 200px;
-  max-height: 0;
-  overflow: hidden;
-  background: darkcyan;
-}
+ nav ul{
+     list-style: none;
+     padding: 0;
+     display: table;
+     background: darkcyan;
+     position: absolute;
+     width: 100%;
+ }
 
-nav li:hover > ul > li {
-  overflow: visible;
-  max-height: 100%;
-}
+ nav a{
+     text-decoration: none;
+     display: block;
+     padding: 0 3em;
+     color: black;
+ }
 
-.menu > li > ul {
-  top: 103%;
-}
+ /* primer nivel */
+ nav > ul >li{
+     float: left;
+     width: 320px;
+     line-height: 70px;
+ }
 
-/* hover a todos los li  */
+ nav li {
+     position: relative;
+ }
 
-li :hover {
-  background: rgb(1, 82, 82);
-}
+ /* segundo nivel */
+ nav li li{
+     max-height: 0;
+     transition: all 5s;
+ }
 
-/* arreglos en el texto */
-a {
-  font-size: 25px;
-  text-align: center;
-}
+ nav li:hover > ul >li{
+     visibility: visible;
+     max-height: 500px;
+     overflow: visible;
+ }
 
-h1 {
-  text-align: center;
-  margin-top: 20px;
+ /* tercer nivel */
+
+ nav ul ul ul{
+     left: 100%;
+     top: 0;
+ }
+
+
+ h1{
+    text-align: center;
+  /*     margin-top: 50px; */
+    font-family: cursive;
 }
