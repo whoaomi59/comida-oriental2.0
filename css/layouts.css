@@ -3,14 +3,15 @@
   padding: 0;
 }
 body {
-  background-color: rgb(238, 205, 165);
+/*   background-color: rgb(238, 205, 165); */
 }
 .titulo {
   text-align: center;
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 20px;
-  margin-top: 35px;
+  margin-top: 45px;
+  color: rgb(158, 72, 11)
 }
 /* .caja {
   background-color: gray;
@@ -63,6 +64,7 @@ body {
 h2 {
   text-align: center;
   font-size: 3em;
+  color: #a43b06;
 }
 img {
   display: block;

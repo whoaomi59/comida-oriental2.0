@@ -8,19 +8,35 @@
     <link rel="stylesheet" href="CSS/contactenos.css" />
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/menu.css" />
+
+    <script defer src="js/index.js"></script>
+    <script
+      src=" https://kit.fontawesome.com/7e5b2d153f.js "
+      crossorigin=" anónimo "
+    ></script>
+
   </head>
   <body>
     <!-------------clases------------------->
     <div id="linea"></div>
 
-    <!------------------menu------------------------->
-    <nav class="menu-main">
-      <a href="index.html">Inicio</a>
-      <a href="layouts.html">layouts</a>
-      <a href="form-hospital.html">Citas</a>
-      <a href="tabla.html">Clientes</a>
-      <a href="contactenos.html">Contáctos</a>
-    </nav>
+     <!------------------menu repisive------------------------->
+     <header class="menu">
+      <nav>
+        <a href="" class="logo">Oriental</a>
+        <button class="bot" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav1">
+          <li class="nav-menu"><a href="index.html" class="link">Inicio</a></li>
+          <li class="nav-menu"><a href="contactenos.html" class="link">Contactenos</a></li>
+          <li class="nav-menu"><a href="tabla.html" class="link">Clientes</a></li>
+          <li class="nav-menu">
+            <a href="layouts.html" class="link link-active">Catalogo</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <h1>Contáctenos</h1>
     <form action="tabla.html" method="get">
       <fieldset>
