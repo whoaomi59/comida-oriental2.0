@@ -74,3 +74,180 @@ p {
   font-size: 20px;
   text-align: justify;
 }
+
+
+@media only screen and (min-width:1024px) and (max-width:1680px){
+  body {
+    background-color: darkcyan;
+  }
+  
+  .caja {
+    width: 100%;
+    
+    display: block;
+    margin-bottom: 40px;
+  }
+  .caja1{
+  width: 40.5%;
+  height: auto;
+  float: left;
+  padding-top: 2px;
+  }
+  
+  .caja2{
+    width: 40.5%;
+    float: left;
+    height: auto;
+    padding-bottom: 2px;
+  }
+  
+  .caja3{
+    width: 40.5%;
+    float: left;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .caja4{
+    width: 40.5%;
+    float: left;
+    height: auto;
+    margin-top: 20px;
+  }
+  }
+  
+  
+  @media only screen and (min-width:768px) and (max-width:1023px) {
+  
+   body {
+     background-color: bisque;
+   }
+  
+  
+  
+   .caja {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+  .caja1{
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20%;
+  }
+  
+  .caja2{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  
+  .caja3{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  
+  .caja4{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  
+  }
+  
+  /* para dispocitivos maviles */
+  
+  @media only screen and (max-width:767px){
+   body{
+     background-color: chocolate;
+   }
+  
+   .caja {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    padding-left: 200px;
+  }
+  .caja1{
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+  
+  }
+  
+  .caja2{
+    width: 50%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+  
+  }
+  
+  .caja3{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+  }
+  
+  .caja4{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+  }
+  
+  
+  }
+
+  @media only screen and (min-width:255px) and (max-width:693px){
+    .caja {
+      width: 100%;
+      display: block;
+      margin-bottom: 40px;
+      padding-left: 2px;
+    }
+    .caja1{
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    
+    }
+    
+    .caja2{
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    
+    }
+    
+    .caja3{
+      width: 90%;
+      height: auto;
+      float: left;
+      margin-top: 20px;
+    }
+    
+    .caja4{
+      width: 90%;
+      height: auto;
+      float: left;
+      margin-top: 20px;
+    }
+img{
+  width: 90%;
+  height: auto;
+}
+  }

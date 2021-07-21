@@ -30,9 +30,9 @@ nav {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 0 40px;
+  padding: 0 5px;
   line-height: 60px; /* para centrar */
 }
 .nav1 {
@@ -80,7 +80,7 @@ nav {
   .logo {
     font-size: 25px;
     line-height: 50px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .nav1 {
     flex-direction: column; /* para que este unu ensima del otro */
