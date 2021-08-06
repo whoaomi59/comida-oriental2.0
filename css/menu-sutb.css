@@ -45,6 +45,7 @@
  nav li li{
      max-height: 0;
      transition: all 5s;
+     overflow: hidden;
  }
 
  nav li:hover > ul >li{
