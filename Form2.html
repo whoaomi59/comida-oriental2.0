@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Form2.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script defer src="js/index.js"></script>
+    <title>CitasMedicas</title>
+</head>
+<body>
+           <!------------------menu repisive------------------------->
+    <header class="menu">
+        <nav>
+          <a href="" class="logo">Oriental</a>
+          <button class="bot" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav1">
+            <li class="nav-menu"><a href="index.html" class="link">Inicio</a></li>
+            <li class="nav-menu"><a href="contactenos.html" class="link">Contactenos</a></li>
+            <li class="nav-menu"><a href="tabla.html" class="link">Clientes</a></li>
+            <li class="nav-menu">
+              <a href="layouts.html" class="link link-active">Catalogo</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+
+
+    <h1>Citas Médicas</h1>
+        <form method="get">
+        <fieldset>
+            <div class="formulario2">
+            <input  class="N" type="text" name="nombres" placeholder="Ingrese su(s) nombres"> <br><br>
+            <input  class="N"type="text" name="apellidos" placeholder="Ingrese sus apellidos"> <br><br>
+            Observaciones <br><br>
+            <textarea class="N2" name="Observaciones" cols="40" rows="5">Observaciones(max. 200 carácteres)</textarea> <br>
+            Ver Días Disponibles <br><br>
+            <input class="N2" type="checkbox" name="horario" value="am">Lunes <br>
+            <input class="N2" type="checkbox" name="horario" value="pm"> Martes <br>
+            <input class="N2" type="checkbox" name="horario" value="pm"> Miercoles <br>
+            <input class="N2" type="checkbox" name="horario" value="pm"> Jueves <br>
+            <input class="N2" type="checkbox" name="horario" value="pm"> Viernes <br><br>
+            IPS de atención <br>
+            <input class="N2" type="radio" name="tdocumento" value="cedula" checked="checked">IPS centro<br>
+            <input class="N2" type="radio" name="tdocumento" value="tarjeta" >IPS Agua Blanca<br>
+            <input class="N2" type="radio" name="tdocumento" value="registro" >IPS Calamo<br>
+            <input class="N2" type="radio" name="tdocumento" value="pasaporte" >IPS Solarte<br><br>
+            Seleciona un médico <br><br>
+            <select class="N" name="medico">
+                <option value="jhonma">jhon mario</option><br>
+                <option value="Carlos">carlo martinez</option><br>
+                <option value="juan">Juan diego</option><br>
+            </select> <br> <br>
+            <input class="N3" class="N" type="submit"value="Enviar">
+        </div>
+        </fieldset>
+    </div>
+</body>
+</html>
