@@ -2,76 +2,141 @@
     margin: 0;
     padding: 0;
 }
-nav{
-    background: black;
-    font-size: 1.4em;
-}
-
-ul{
-    list-style: none;
-    text-align: right;
-}
-li{
-   display: inline-block;
-   padding: 20px 40px 20px 0;
-}
-a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-.icon{
-    color: white;
-    margin-right: 0.2em;
-    font-size: 0.85em;
-}
-.bt-menu{
-    display: none;
+body{
+    background: #fefefe;
 }
 .menu_bar{
     display: none;
 }
-.children{
-    position: absolute;
+header{
+    width: 100%;
 }
-.icon-chevron-small-down{
-    margin-left: 30px;
+header nav{
+    background: #023859;
+    width: 100%;
 }
-li:hover .children{
+nav ul{
+    list-style: none;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li:hover {
+    background: red;
+}
+nav ul li a{
+    color:white;
     display: block;
-    background: rgb(0,0,0,.8);
-    width: 200px;
+    text-decoration: none;
+    padding: 20px;
 }
-.children li{
+nav ul li .children{
+display: none;
+position: absolute;
+background: #011826;
+text-align: left;
+}
+nav ul li:hover .children {
+display: block;
+width: 120%;
+text-align: left;
+}
+nav ul li .children li{
     overflow: hidden;
     display: block;
+    border-bottom: 1px solid gray;
 }
-@media only screen and(max-width:900px){
-    nav{ 
-     width: 80%;
+nav ul li .children li a{
+    display: block;
+}
+nav ul li span {
+    margin-right: 10px;
+}
+
+nav ul li .children li a span{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+}
+nav ul li .icon-chevron-small-down{
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+@media screen and (max-width:800px){
+    body{
+        padding-top: 80px;
     }
     .menu_bar{
         display: block;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        font-size: 2.5em;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #07293f;
     }
     .menu_bar .bt-menu{
-        color: white;
-    }
-    nav{
-        height: calc(100%-80px);
-        position: fixed;
-        height: 100vh;
-        overflow: scroll;
-        right: 100%;
-    }
-    li{
         display: block;
-        text-align: center;}
-
-    li:hover .children{
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+    }
+    header nav{
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+    header nav ul{
+        text-align: left;
+    }
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid grey;
+    }
+    header nav ul li a{
+        padding: 12px;
+        display: block;
+    }
+    header nav ul li .children{
+        position: relative;
+        width: 100%;
+    }
+    header nav ul li .children li a{
+        margin-left: 20px;
+    }
+     nav ul li .icon-chevron-small-down{
+         float: right;
+     }
+    header nav ul li:hover .children{
         display: none;
+    } 
+    p{
+        text-align: justify;
     }
-    }
+}
+
+
+/* CONTENIDO "TEXTO" */
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+  
+}
+
+p{
+    text-align: center;
+}
