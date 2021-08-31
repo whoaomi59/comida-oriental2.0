@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <!-- <link rel="stylesheet" href="css/menu.css" /> -->
     <title>Comida Oriental</title>
+    <link rel="stylesheet" href="css/menuresponsive.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/menu.js"></script>
 
     <script defer src="js/index.js"></script>
     <script
@@ -32,7 +35,17 @@
     <!-- <div id="linea">fgbdf</div> -->
 
     <!------------------menu repisive------------------------->
-    <header class="menu">
+    <label class="icon-menu" onclick="mostrarMenu ()"><i class="fas fa-bars"></i></label>
+    <nav id="menuprincipal">
+        <ul class="menu">
+            <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+            <li><a href="#"><i class="fas fa-users"></i>Quienes somos</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i>Contactenos</a></li>
+            <li><a href="#"><i class="fab fa-blogger-b"></i>Blog</a></li>
+            <li><a href="#"><i class="fas fa-building"></i>Empresas</a></li>
+        </ul>
+   </nav>
+   <!--  <header class="menu">
       <nav>
         <a href="" class="logo">Oriental</a>
         <button class="bot" aria-label="Abrir menu">
@@ -47,14 +60,14 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <!---------------------contenido----------------------->
 
     <header class="img_1">
       <div class="texto-caja">
         <h2 class="caja">
-          <a class="paralax" href="menu-vert-responsive.html">Menu Vertical</a>
+          <a class="paralax" href="login.html">Inicar Secion</a>
         </h2>
       </div>
     </header>
