@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:minmax(200px, 1fr) 1fr 1fr;/* toma todo el espacio */
+    grid-template-rows:minmax(100px, auto) 200px; /* filas */
+    gap: 20px;/* para ceparar uno del otro */
+    width: 90%;
+    max-width: 1000px;
+    border: 5px solid black;
+    text-align: center;
+    /* line-height: 50px; */
+    margin: 0 auto; /* para centra contenedores */
+    font-size: 30px;
+}
+
+.container > div {
+    display: block;
+    padding: 20px;
+    color: white;
+    background: #2f89fc;
+    box-shadow: 2px 2px 10px rgba(0,0, 0, .25);
+}
