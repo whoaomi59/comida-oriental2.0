@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   /*  background-image: url("principal.jpeg"); */
+   background:#2E2E30 ;
+   
+}
+section{
+    background-image: url("principal.jpeg");
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+.articulos{
+    display: grid;
+    width: 90%;
+    margin: 50px auto;
+    grid-template-columns: repeat(3,400px);
+    gap: 60px;
+    grid-template:  "monitor pc monitor1" auto
+                    /* "monitor pc monitor1" auto
+                    "monitor pc monitor1" auto */ / 
+                        300px 300px 300px ;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+}
+h3{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 20px;
+}
+p{
+    color: rgba(255, 255, 255, 0.658);
+}
+
+@media only screen and (max-width: 877px){
+    /* body{
+        background: chocolate;
+    } */
+    section{
+        background-image: url("principal.jpeg");
+        margin-top: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+    }
+    .articulos{
+    /*     background-color: darkblue; */
+        grid-template-columns: 1fr,  auto;
+        gap: 40px;
+        grid-template:   "monitor pc" auto
+                         "monitor1 monitor2" auto
+                        / minmax(auto, 400px);
+      
+    }
+    img{
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width:641px){
+   /*  body{
+        background: chocolate;
+    } */
+    section{
+        background-image: url("principal.jpeg");
+        margin-top: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+    }
+    .articulos{
+        /* background-color: violet; */
+        display: grid;
+        width: 100%;
+        margin: 20px auto;
+        margin-right: 50px;
+        grid-template-columns: 1fr, auto;
+        gap: 40px;
+        grid-template:  "monitor" auto
+                        "pc" auto
+                        "monitor1" auto/
+                            minmax(auto, 500px);
+        justify-content: center;
+    }
+   img{
+       width: 100%;
+       height: 220;
+   }
+}
