@@ -7,6 +7,7 @@ for (i = 0; i <= 3; i++){
 var producto1 = new  Array();
 var producto2 = new  Array();
 var producto3 = new  Array();
+
 var productos = new Array();
 
 
@@ -32,4 +33,6 @@ for(var i=  0; i <= 2; i++){
         }
         productos[i] = producto3;
     }
+
+    alert(productos + "\n");
 }
