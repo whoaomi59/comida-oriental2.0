@@ -1,0 +1,10 @@
+.container{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.082);
+    border-radius: 10px;
+}
+p{
+    font-size: 1.2em;
+}
