@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="css/amazon.css">
+</head>
+<body>
+    <div class="container">
+        <p class="subt">Subtotal cops <span id="cop">0</span></p>
+        <div class="box1">
+            <label   class="text"> Proceder al pago (<span id="totalPro">0</span> productos)</label>
+            
+        </div>
+        <div class="box2">
+            <img src="img/amazon.jpg">
+
+            <div class="subbox">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis</p>
+                <p>por David Flanagan</p>
+                <h3>Tapa blanda</h3>
+                <p>cop<samp class="copi">112.350</samp></p>
+                <div class="subbox1">
+                    <input class="bot" type="button" value="Eliminar">
+                    <input class="bot" type="button" value="Guardar para mas tarde">
+                </div>
+               
+            </div>
+        </div>
+        <div class="box3">
+            <button id='aumentar' onclick="aumentar()">+</button>
+            <input type='text' id="cantidad" value="0">
+            <button id='disminuir' onclick="disminuir()">-</button>
+        </div>
+       
+    </div>
+    
+
+
+    
+
+</body>
+<script src="js/amazon.js"></script>
+</html>
