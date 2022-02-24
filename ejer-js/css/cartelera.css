@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #fff;
+    background-color: #141414;
+     
+    font-family: helvetica;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*estandar css3*/
+
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.spa{
+    color: red;
+}
+.container{
+    margin: 40px;
+}
+.box1{
+    
+    margin: auto;
+    width: 80%;
+    /* background-color: #fff; */
+}
+#principal{
+    width: 100%;
+    height: 70vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+    
+}
+
+.js{
+    width: 20%;
+    height: 20%;
+    margin: 20px 20px 20px 30px;
+    cursor: pointer;
+}
+
+.js:hover {
+    background: gray;
+}
