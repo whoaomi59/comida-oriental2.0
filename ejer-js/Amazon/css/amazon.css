@@ -27,6 +27,7 @@
 #aumentar, #disminuir,#cantidad{
    border-collapse:collapse;
    border: 0;
+   
 }
 .subt{
     margin-left: 20px;
@@ -65,7 +66,9 @@ img{
 }
 .box3{
     text-align: center;
-    width: 40%;
+    width: 20%;
+    margin-left: 5px;
+  
 }
 h3{
     font-size: 16px;
