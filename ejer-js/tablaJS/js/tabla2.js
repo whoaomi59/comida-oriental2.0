@@ -39,22 +39,22 @@ function validarInfo(){
     let ValorUnit = document.getElementById('valor');
     let Stock = document.getElementById('stock');
 
-    if(Codigo.value == '') {
+    if(Codigo.value.trim() == '') {
         Codigo.focus();
         alert('Codigo no puede estar vacio')
         return false;
     }
-    if(Descripcion.value == '') {
+    if(Descripcion.value.trim() == '') {
         Descripcion.focus();
         alert('Descripcion no puede estar vacio')
         return false;
     }
-    if(ValorUnit.value == '') {
+    if(ValorUnit.value.trim() == '') {
         ValorUnit.focus();
         alert('ValorUnit no puede estar vacio')
         return false;
     }
-    if(Stock.value == '') {
+    if(Stock.value.trim() == '') {
         Stock.focus();
      
         alert('Stock no puede estar vacio')

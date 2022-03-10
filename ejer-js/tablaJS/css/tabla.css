@@ -58,7 +58,7 @@ div > .container{
     color: white;
     width: 100px;
 }
-.tablacreate td{border: 1px solid grey ; text-align: center;}
+.tablacreate td{border: 1px solid grey ; }
 
 #stock, #valor{
     width: 100%;
