@@ -1,0 +1,61 @@
+*{
+    font-family: helvetica;
+}
+
+input{
+    width: 50%;
+    height: 5vh;
+    margin-right: 0;
+}
+
+ #descripcion{width: 90%;}
+.boton{
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 100%;
+    height: 5vh;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid grey;
+    width: 760px;
+    margin-top: 30px;
+}
+div > .container{
+    display: grid;
+}
+.container{
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 170px 200px 200px 140px;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas: "al bl bl bl"
+                        "cl dl dl dl "
+                        "fl gl hl il"
+                        "jl jl jl jl";
+                        
+}
+
+.a { grid-area: al; /*background: blue */}
+.b { grid-area: bl; /*background: red*/ }
+.c { grid-area: cl; /*background: green */}
+.d { grid-area: dl; /*background: orange */}
+.f { grid-area: fl; /*background: rgb(251, 255, 0) */}
+.g { grid-area: gl; /*background: red */}
+.h { grid-area: hl; /*background: rgb(0, 47, 255) */}
+.i { grid-area: il; /*background: rgb(255, 0, 179) */}
+.j { grid-area: jl; /*background: rgb(0, 195, 255) */}
+#tablesJS{ margin: 0 auto; margin-top: 30px; width: 400px;}
+.tablacreate th{ 
+    border: 1px solid grey; 
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    width: 100px;
+}
+.tablacreate td{border: 1px solid grey ; text-align: center;}
