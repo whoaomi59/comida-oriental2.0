@@ -4,7 +4,7 @@
 
 input{
     width: 50%;
-    height: 5vh;
+    height: 4vh;
     margin-right: 0;
 }
 
@@ -33,7 +33,7 @@ div > .container{
     margin: 0 auto;
     grid-gap: 1rem;
     display: grid;
-    grid-template-columns: 170px 200px 200px 140px;
+    grid-template-columns: 170px 200px 150px 180px;
     grid-template-rows: 50px 50px 50px 50px;
     grid-template-areas: "al bl bl bl"
                         "cl dl dl dl "
@@ -59,3 +59,7 @@ div > .container{
     width: 100px;
 }
 .tablacreate td{border: 1px solid grey ; text-align: center;}
+
+#stock, #valor{
+    width: 100%;
+}
