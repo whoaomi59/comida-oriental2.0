@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* usamos grid para dispocitivos moviles */
+.navbar{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    background-color: rgba(255, 255, 0, 0.678);
+    text-align: center;
+    padding: 10px;
+    display:  grid;
+    grid-template-columns: 2px 500px 50px  50px ;
+    grid-template: " logo buscar togel carrito" 40px;             
+}
+
+.navbar >div{
+    display: grid;
+}
+.a{
+    grid-area: logo;
+}
+
+.b{
+    grid-area: buscar;
+}
+.c{
+    grid-area: carrito;
+}
+.d{
+    margin-right: 10%;
+    grid-area: togel;
+}
+.logomercado{
+    width: 130px;
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    .logomercado{
+        width: 100px;
+    }
+    .menu{
+    
+        font-size: 20px;
+    }
+    .fab{
+        font-size: 20px;
+        margin: 5px;
+    }
+}
+@media (max-width: 490px) {
+    .logomercado{
+        width: 80px;
+        padding: 5px;
+    }
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#filtro{
+    width: 100%;
+    height: 4vh;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px 2px rgba(128, 128, 128, 0.39);
+    border: 0;
+
+}
+#filtro::placeholder{
+    color: rgb(129, 126, 126);
+    font-size: 17px;
+    padding: px;
+    font-family: Helvetica;
+}
+
+.menu{
+    
+    font-size: 25px;
+}
+.fab{
+    font-size: 25px;
+    
+}
+/*caja llamada desde html, pero su funcion esta en js*/
+
+.boxconter{
+    padding: 20px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.356);
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template:"foto  testo testo testo"/
+                   30%  
+    ; 
+}
+.boxconter >div{
+    display: grid;
+}
+.png{
+    background-color: #fff;
+    grid-area: foto;
+    
+}
+.texto{
+    font-size: 20px;
+    grid-area: testo;
+}
+
+.imagen{
+    margin: 0 auto;
+    width: 90%;
+    height: 30vh;
+    border-radius: 9px;
+}
+.parafo1{
+    padding-top: 85px;
+}
