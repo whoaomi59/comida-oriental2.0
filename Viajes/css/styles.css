@@ -30,6 +30,7 @@
    color: white;
   }
   .style-contentInfo{
+    background-color: #fff;
       font-family: Arial, Helvetica, sans-serif;
       display: grid;
       margin: 20px;
@@ -141,20 +142,20 @@
     margin-top: 25px;
     color: white;
     text-align: center;
-    background-color: rgba(44, 20, 138, 0.658);
+    background-color: rgba(49, 26, 139, 0.658);
     width: 135px;
     height: 40px;
     border-radius:15px;
     border: none;
     grid-area: btn;
     cursor: pointer;
-  
+    border: 1px solid whitesmoke;
   }
   .btnSesion:hover{
     background-color: rgba(27, 9, 99, 0.945);
-    border: 1px solid whitesmoke;
+    
   }
-  label:hover{
+  .encabezado > label:hover{
       color: rgb(133, 130, 130);
       border-bottom: 3px solid #fff;
   }
