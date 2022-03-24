@@ -1,62 +1,208 @@
+
 *{
     margin: 0;
     padding: 0;
     font-family: helvetica;
-}
 
-.navbar{
-    display: flex;
-    align-items: center;
-    
-   background-color: rgb(13, 15, 134);
-   display: grid; 
-   grid-template-columns:20px 50px 50px 10px ;
-   grid-template:"logo primeraf segundaf terceraf"/
-                    1fr 2fr 1fr 1fr;
-   padding: 16px;
-}
-.navbar > div{
+  }
+  body{
+      background-color: rgba(231, 226, 226, 0.61);
+  }
+  .encabezado {
+    text-align: center;
     display: grid;
-    display: flex;
-}
-.logo{
-    width: 150px;
-
-}
-.a{
-    grid-area: logo;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(13, 15, 134);
+    font-family: 'Times New Roman', Times, serif;
+    grid-template: "iconoLatam  LaOfertas LaVijes laAyuda btn icono-barra" / 
+                      1fr 2fr 2fr 2fr 1fr 1fr;
+  }
+  .icon{
+      width: 110PX;
+  }
+  .icono-barra {
+    margin:15px 15px 0 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    grid-area: icono-barra;
+    cursor: pointer;
+   color: white;
+  }
+  .style-contentInfo{
+      font-family: Arial, Helvetica, sans-serif;
+      display: grid;
+      margin: 20px;
+      border-radius: 10px;
+      /* padding: 0 20px 20px 20px; */
+      box-sizing:border-box;
+      border: 1px solid rgb(48,48,48,.2); 
+      grid-template: "titulo titulo titulo" 30px 
+                     "label1 txt label2" 32px
+                     "cuidadSal dur destino" 32px
+                     "lineaDiv lineaDiv lineaDiv" 
+                     "infoValor infoValor infoValor" 15px
+                     "info info valor" auto/
+                       6fr       8fr 1fr;
+  }
+  .infoValor{
+    grid-area: infoValor;
+    color: green;
+    text-align: right;
+    font-size: 10px;
+    margin-right: 20px;
+  }
+  .info{
+  grid-area: info;
+  color: rgb(1, 1, 71);
+  font-weight: bold;
+  
+  }
+  .valor{
+    margin-right: 20px;
+    grid-area: valor;
+  }
+  .valor, .info{
+    margin-bottom: 15px;
+  }
+  .lineaDiv{
+    grid-area: lineaDiv;
+    margin: 10px;
+  }
+  .ciudadSal{
+    width: 100%;
+    grid-area: cuidadSal;
+  }
+  .ciudadSal, .horaSal,.info{
+    margin-left: 20px;
+  }
+  .horaSal, .txtduracion,.horaLleg{
+    padding-top: 10px;
+  }
+  .txtduracion{
+    width: 100%;
+    grid-area: txt;
+  }
+  .duracion{
+    width: 100%;
+    grid-area: dur;
+  }
+  
+  .tituloSpan{
+  width: 110px;
+  color: white;
+  background-color: rgb(0, 109, 91);
+  grid-area: titulo;
+  padding: 5px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 10px;
+  
+  }
+  .horaSal {
+    font-size: 1.3em;
+    color: rgb(1, 1, 102);
+    width: 100%;
+    grid-area: label1;
+  }
+  .horaLleg {
+    font-size: 1.3em;
+    color: rgb(1, 1, 102);
+    width: 100%;
+    margin-right: 20px;
+    grid-area: label2;
+  }
+  .destino{
+  
+    width: 100%;
+    grid-area: destino;
+  }
+  
+  .icon {
     
-}
-.b{
-    grid-area: primeraf;
-}
-.c{
-    grid-area: segundaf;
+    margin:15px 0 0 15px;
+    grid-area: iconoLatam;
+  }
+  .LaOfertas {
+    grid-area: LaOfertas;
+  }
+  .LaVijes {
+    grid-area: LaVijes;
+  }
+  .laAyuda{
+    grid-area: laAyuda;
+  }
+  .LaVijes, .LaOfertas, .laAyuda{
+    padding-top: 35px;
+    color: white;
+    cursor: pointer;
+  }
+  .btnSesion{
+    margin-right: 10px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    background-color: rgba(44, 20, 138, 0.658);
+    width: 135px;
+    height: 40px;
+    border-radius:15px;
+    border: none;
+    grid-area: btn;
+    cursor: pointer;
+  
+  }
+  .btnSesion:hover{
+    background-color: rgba(27, 9, 99, 0.945);
+    border: 1px solid whitesmoke;
+  }
+  label:hover{
+      color: rgb(133, 130, 130);
+      border-bottom: 3px solid #fff;
+  }
+  @media only screen and (max-width: 986px){
+    .encabezado {
+      text-align: center;
+        display: grid;
+        width: 100%;
+        height: 80px;
+        grid-template: "iconoLatam   btn icono-barra" / 
+                        1f 1fr 1fr;
+    }
+    .laAyuda, .LaOfertas, .LaVijes, .btnSesion{
+      display: none;
+    }
+    .btnSesion{
     
-}
-.d{
-    grid-area:terceraf;
-
-}
-.sesion{
-    background: rgba(255, 255, 255, 0.397);
-    border-radius: 15px;
-    padding: 10px;
-}
-
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    display: flex;
-    margin-left: 10px;
-    padding: 8px;
-}
-a:hover{
-    color: rgba(255, 255, 255, 0.555);
+      width: 120px;
+      height: 40px;
+    }
+    .icon {
+      padding: 10px;
+      margin:15px 0 0 5px;
+      width: 100PX;
+      grid-area: iconoLatam;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .encabezado {
+      text-align: center;
+        display: grid;
+        width: 100%;
+        height: 80px;
+        grid-template: "iconoLatam   enpity icono-barra" / 
+                        1f 1fr 1fr;
+    }
+    .laAyuda, .LaOfertas, .LaVijes, .btnSesion {
+      display: none;
+    }
+    .btnSesion{
     
-    
-}
+      width: 120px;
+      height: 40px;
+    }
+    .icon {
+      width: 100PX;
+      padding: 10px;
+      margin:15px 0 0 5px;
+      grid-area: iconoLatam;
+    }
+  }
