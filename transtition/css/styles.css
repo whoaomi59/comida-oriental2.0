@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-align: center;
+    padding: 60px;
+}
+/* duracion */
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    transition-duration: 3s ;
+}
+.container:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 0px 0px 90px 0px;
+
+}
+/* retrazo */
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition: width 2s;
+    margin-bottom: 20px;
+}
+.box:hover{
+    width: 300px;
+   background: rebeccapurple;
+   color: #fff;
+}
+/* delay */
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    margin-bottom: 20px;
+}
+.box1:hover{
+    width: 300px;
+    
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    transition: width 2s, height 2s, transform 2s;
+    background-color: aquamarine;
+}
+.box2:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+    border-radius: 20px;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color:yellow;
+    clip-path: circle(50% at top left);
+    transition: width 2s;
+}
+.box3:hover{
+    clip-path: circle(80% at top center);
+    width: 80%;
+    background-color: rgb(128, 128, 128);
+    opacity: 0.2;
+}
