@@ -2,70 +2,199 @@
     margin: 0;
     padding: 0;
 }
-.navbar{
+.body{
+    background-color: #f5f5f5;
+
+}
+#navbar{
+    padding: 10px;
+    margin-bottom: 13PX;
     background-color: #fff;
-    border-bottom: 2px solid grey;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.705);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.171);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.685);
     padding: 9px;
     display: grid;
-    grid-template:"togel logo busqueda iconavbar persona imagen"/
-                200px   100px 1fr      30px       100px      200px;
+    grid-template:"togel     logo      busqueda  iconavbar  ubicacion    carritoimg  cmrImg  cuenta"/
+                                  200px   100px     3fr                 40px                 1fr       1fr          1fr     1fr;
 }
-.navbar >label{
+#navbar >label{
     margin-left: 6px;
-    font-size: 30px;
+   display: none;
    text-align: center;
 }
-.togel{
+
+/*============grid==========*/
+.togels{
     grid-area: togel;
+
+}
+.fa{
+    font-size: 22px;
+    display: none;
 }
 .search{
     grid-area: busqueda;
-    
 }
+
 #icob{
     grid-area: iconavbar;
 }
 .homer{
- grid-area: persona;
+ grid-area: ubicacion;
 }
-.icon{
-    grid-area: imagen;
+.carrito{
+    grid-area: carritoimg;
     
 }
+.cmr{
+    grid-area: cmrImg;
+}
+.micuenta{
+    grid-area: cuenta;
+}
+/*==============0estilos===============*/
 #icob{
     border: 0;
     background-color: #fff;
     font-size: 25px;
 }
-.logo, .icon{
-    width: 50px;
+.logo{
+    margin-left: 10px;
+    width: 100%;
+} 
+.search{
+    width: 95%;
+    margin-top: 3px;
+    outline: none;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.201);
+    height: 5vh;
 }
-
-
+#icob{
+   cursor: pointer;
+   margin-right: 15px;
+}
+/*====================Menu remplazo============*/
+.boxRemplazo{
+    margin-bottom: 13PX;
+    background-color: #fff;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.171);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.685);
+    padding: 9px;
+    display: grid;
+    grid-template:" ico sears cerar" /
+                                    30px 1fr  30px;
+}
+/*=========grid=======*/
+.icob{
+    grid-area: ico;
+}
+.inputSear{
+    grid-area: sears;
+}
+.close{
+    grid-area: cerar;
+}
+/*==========estilos========*/
+.icob{
+    cursor: pointer;
+}
+.inputSear{
+    outline: none;
+   border: 0;
+    width: 100%;
+}
+.close{
+    cursor: pointer;
+}
 @media only screen and (max-width: 1102px){
-   /*  .search{
-        display:0;
-        
-    } */
+    a > img{
+        width: 70px;
+    }
+    .logo{
+        display: none;
+    }
+ #navbar >label{
+  display: block;
+}
     .search{
         display: none;
     }
-    .inputSear{
-        width: 100%;
-        background-color: yellowgreen;
-        grid-area: sears;
+   
+}
+@media only screen and (max-width: 741px){
+    a > img{
+        width: 50px;
     }
-    .box{
-        width: 100%;
-        background-color: #fff;
-        border-bottom: 2px solid grey;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.705);
-        padding: 9px;
-        display: grid;
-        grid-template:"sears sears sears sears sears"/
-                        1fr 1fr 1fr 1fr 1fr;
-                   
-    }
+
+   .fa{
+       font-size: 18px;
+   }
+}
+/*==============conter====================*/
+.conter{
+    padding: 20px;
+    height:100vh;
+    background-color: #f5f5f5;;
+}
+.boxslider{
+    margin: 0 auto;
+    width: 100%;
+    height: 70vh;
+}
+/*=============imagen fondo=======*/
+.boxslider > img{
+    border-radius: 4px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+
+}
+/*==========caja de contenido=========*/
+.boxConter{
+    width: 90%;
+    margin: 0 auto;
+}
+/*==================targetas=========*/
+.card{
+    padding: 10px;
+    display: grid;
+    grid-template: "targeta1 targeta2"/
+                                1fr 1fr;
 }
 
+.card1{
+    grid-area: targeta1 ;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.card2{
+    grid-area: targeta2;
+    padding-top:10px ;
+    cursor: pointer;
+}
+.card1, .card2{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+.imgtarg{
+    width: 98%;
+}
+.imgtarg:hover{
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.185);
+}
+@media only screen and (max-width: 1102px){
+    .imgtarg{
+        width: 90%;
+    }
+ }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homecenter</title>
     <link rel="stylesheet" href="css/home.css">
     <script
     src=" https://kit.fontawesome.com/7e5b2d153f.js "
@@ -13,14 +13,31 @@
 </head>
 <body>
     <div class="header">
-        <div class="navbar"> <label class="fa fa-bars togel"></label>
-            <img class="logo" src="img/logo.PNG">
-            <input id="sear" class="search" type="text" placeholder="Search.."><button id="icob" type="submit" onclick="buscar()"><i class="fa fa-search"></i></button>
-            <label class="fa fa-male homer"></label></div>
-        <div class="search-navbar"></div>
+            <!--===========menu plincipal=============-->
+                <div id="boxheader">
+                        <div id="navbar"> 
+                            <label class="fa fa-bars togels"></label>
+                            <img class="logo" src="img/logo.PNG">
+                            <input id="sear" class="search " type="text" placeholder="¿Qué estás buscando?"><button id="icob" type="submit" onclick="buscar()">
+                            <i class="fa fa-search"></i></button>
+                            <a href="#" class="homer"><img src="img/bogota.png" alt=""></a>
+                            <a href="#" class="carrito"><img src="img/carrito.png" alt=""></a>
+                            <a href="#" class="cmr"><img src="img/cmr.png" alt=""></a>
+                            <a href="#" class="micuenta"><img src="img/micuenta.png" alt=""></a>
+                    </div>
+                </div>
+                <!--===========menu remplazo=============-->
+                <div id="boxRemplazo"></div>
     </div>
-
-
+    <div class="conter">
+            <div class="boxslider"><img src="img/BANNER.jpg"></div>
+            <div class="boxConter">
+                <div class="card">
+                    <div class="card1"><img class="imgtarg" src="img/1.png"></div>
+                    <div class="card2"><img   class="imgtarg"  src="img/2.png"></div>
+                </div>
+        </div>
+    </div>
 </body>
 <script src="js/index.js"></script>
 </html>
